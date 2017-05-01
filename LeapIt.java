@@ -7,6 +7,11 @@ public class LeapIt {
     String yearStr = rudy.readLine();
     Integer yearBorn = Integer.parseInt(yearStr);
     Integer age = (2017 - yearBorn);
+    Float ageFloat = (float)age;
+    Float percentage =  ageFloat / 241 * 100;
+
+    System.out.println();
+    System.out.println("you are " + age + " years old and have lived through all of these Presidential elections");
 
     for (Integer year = yearBorn; year < 2017; year++){
       if (year % 4 == 0) {
@@ -100,6 +105,6 @@ public class LeapIt {
       }
     }
     System.out.println();
-    System.out.println("you are " + age + " years old and have lived through all of these Presidential elections");
+    System.out.println("You have lived for " + percentage + "% of US history");
   }
 }
