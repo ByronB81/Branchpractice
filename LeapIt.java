@@ -2,9 +2,9 @@ import java.io.Console;
 
 public class LeapIt {
   public static void main(String[] args) {
-    Console rudy = System.console();
+    Console console = System.console();
     System.out.println("What year were you born?");
-    String yearStr = rudy.readLine();
+    String yearStr = console.readLine();
     Integer yearBorn = Integer.parseInt(yearStr);
     Integer age = (2017 - yearBorn);
     Float ageFloat = (float)age;
